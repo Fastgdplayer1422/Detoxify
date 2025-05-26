@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="icon" type="image" href="data/2.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Poppins', sans-serif;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: black;
+			line-height: 1.6;
+		}
+
+		.navbar {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #b98888;
+			padding: 20px 40px;
+			backdrop-filter: blur(200px);
+			position: sticky;
+			top: 0;
+			z-index: 100;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+			color: white;
+		}
+
+		.logo h2 {
+			margin-left: 15px;
+			transition: color 0.3s;
+		}
+
+		.logo h2:hover {
+			cursor: pointer;
+			color: wheat;
+		}
+
+		.navbar-list {
+			display: flex;
+			list-style: none;
+			gap: 30px;
+		}
+
+		.navbar-item a {
+			color: white;
+			text-decoration: none;
+			font-weight: 500;
+			position: relative;
+		}
+
+		.navbar-item a::before {
+			content: '';
+			position: absolute;
+			bottom: -4px;
+			left: 0;
+			height: 2px;
+			width: 0;
+			background: white;
+			transition: width 0.4s ease-in-out;
+		}
+
+		.navbar-item a:hover::before {
+			width: 100%;
+		}
+
+		main {
+			padding: 40px 20px;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+
+		section.box {
+			background-color: #b1bd98;
+			padding: 30px;
+			margin: 20px auto;
+			max-width: 1000px;
+			width: 100%;
+			border-radius: 8px;
+		}
+
+		.three {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			justify-content: space-between;
+			align-items: flex-start;
+			padding: 40px 20px;
+			max-width: 1000px;
+			margin: auto;
+		}
+
+		.threesector1 {
+			flex: 1;
+			min-width: 280px;
+		}
+
+		.threesector1 ul {
+			margin-top: 15px;
+			padding-left: 20px;
+		}
+
+		.three img {
+			max-width: 100%;
+			height: auto;
+			border-radius: 8px;
+			flex: 1;
+			min-width: 280px;
+		}
+
+		.footer {
+			background-color: #b98888;
+			color: white;
+			padding: 40px 20px;
+			text-align: center;
+			font-size: 14px;
+			margin-top: 50px;
+		}
+
+		@media (max-width: 768px) {
+			.navbar {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			.navbar-list {
+				flex-direction: column;
+				gap: 10px;
+				margin-top: 10px;
+			}
+
+			.logo h2 {
+				margin-left: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<nav class="navbar">
+		<div class="logo">
+			<img src="data/2.png" width="64" height="64" alt="Logo">
+			<h2>Nonchalantees</h2>
+		</div>
+		<ul class="navbar-list">
+			<li class="navbar-item"><a href="index.html">Home</a></li>
+			<li class="navbar-item"><a href="about.html">About</a></li>
+			<li class="navbar-item"><a href="product.html">Product</a></li>
+			<li class="navbar-item"><a href="pb.html">Cost</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h1>A Two-Step, All-Natural Cleaning System</h1>
+		<p>Detect & Detox is a powerful, eco-conscious solution designed to make fruits and vegetables safer to eat. Using only plant-based ingredients, this two-step spray system helps protect your health by exposing and removing harmful substances all without harming your food or the planet.</p>
+	</main>
+
+	<section class="box">
+		<h2>Reveal What You Can’t See</h2>
+		<p>Pesticides, synthetic waxes, and chemical residues are often invisible to the naked eye but that doesn’t mean they’re harmless. The DETECT spray uses natural ingredients that react with these hidden layers, causing them to become visible. With just a few sprays, you’ll see what’s really on your produce empowering you to take action before it reaches your plate.</p>
+	</section>
+
+	<section class="box">
+		<h2>Rinse Away the Harm</h2>
+		<p>Once the residues are revealed, the DETOX spray gently but effectively breaks them down. Made from plant derived cleansers, this formula safely removes the unwanted layers without stripping nutrients or flavor. Your produce is left clean, fresh, and ready to enjoy.</p>
+	</section>
+
+	<div class="three">
+		<div class="threesector1">
+			<h2>Sustainable by Design</h2>
+			<p>At Detect & Detox, we believe that caring for your health shouldn't come at the cost of the environment. That’s why every ingredient is:</p>
+			<ul>
+				<li>Biodegradable</li>
+				<li>Non-toxic</li>
+				<li>Safe for waterways</li>
+			</ul>
+		</div>
+		<img src="data/1.png" alt="Sustainable image">
+	</div>
+
+	<div class="footer">
+		<p>Detect & Detox is developed to support healthy, sustainable living. Product information and usage tips are simplified to improve clarity and ease of understanding. While we strive for accuracy, we cannot guarantee complete correctness of all content. By using our website, you agree to our terms of use, cookie policy, and privacy policy.<br><br>© 2025 Detect & Detox. All rights reserved. Powered by nature. Designed for a cleaner future.</p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product</title>
+  <link rel="icon" type="image" href="data/2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: black;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #b98888;
+      padding: 20px 50px;
+      position: relative;
+      backdrop-filter: blur(200px);
+      flex-wrap: wrap;
+    }
+
+    .navbar-list {
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .logo img {
+      width: 64px;
+      height: 64px;
+    }
+
+    .logo h2 {
+      margin-left: 15px;
+      transition: all 0.3s;
+    }
+
+    .logo h2:hover {
+      cursor: pointer;
+      color: wheat;
+    }
+
+    .navbar-item a {
+      position: relative;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar-item a::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background: white;
+      transition: all .4s ease-in-out;
+    }
+
+    .navbar-item a:hover::before {
+      width: 100%;
+    }
+
+    main {
+      margin: 80px 20px;
+      font-size: 18px;
+    }
+
+    main h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .table-container {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 18px;
+      min-width: 600px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 30px;
+      vertical-align: top;
+      transition: all 0.3s;
+    }
+
+    th:hover, td:hover {
+      filter: brightness(0.95);
+    }
+
+    .footer {
+      background-color: #b98888;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 15px;
+      line-height: 1.5;
+      margin-top: 100px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar-list {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .navbar-item {
+        margin: 10px 0;
+      }
+
+      main h1 {
+        font-size: 24px;
+      }
+      
+      
+
+      th, td {
+        padding: 20px;
+        font-size: 16px;
+      }
+
+      table {
+        font-size: 16px;
+      }
+
+      .footer {
+        font-size: 14px;
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="data/2.png" alt="Logo">
+      <h2>Nonchalantees</h2>
+    </div>
+    <ul class="navbar-list">
+      <li class="navbar-item"><a href="index.html">Home</a></li>
+      <li class="navbar-item"><a href="about.html">About</a></li>
+      <li class="navbar-item"><a href="product.html">Product</a></li>
+      <li class="navbar-item"><a href="pb.html">Cost</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Product List</h1>
+    <div class="table-container">
+      <table>
+        <tr>
+          <th bgcolor="#ccd3be">Detect Spray</th>
+          <td bgcolor="#dfe5d3">
+            The ToxiPeel Detector Spray is an all-natural, pH-based spray formulated with plant-based extracts. When sprayed on fruits or vegetables, it reacts to chemical residues by changing color, helping users visually identify potential toxins and pesticides on their produce.
+          </td>
+          <th bgcolor="#ccd3be">AED 9.00</th>
+        </tr>
+        <tr>
+          <th bgcolor="#ccd3be">Detox Spray</th>
+          <td bgcolor="#dfe5d3">
+            The ToxiPeel Detox Spray is a plant-based cleansing solution designed to remove harmful pesticides and surface toxins from produce. It provides an eco-friendly and effective alternative to chemical washes.
+          </td>
+          <th bgcolor="#ccd3be">AED 11.00</th>
+        </tr>
+        <tr>
+          <th bgcolor="#ccd3be">2-in-1 Combo</th>
+          <td bgcolor="#dfe5d3">
+            A smart dual-chamber bottle containing both the ToxiPeel Detector and Detox sprays. Users can easily switch between detection and cleansing in one convenient system. Designed for efficiency, safety, and everyday use.
+          </td>
+          <th bgcolor="#ccd3be">AED 18.00</th>
+        </tr>
+        <tr>
+          <th bgcolor="#ccd3be">Spray Refill Canisters</th>
+          <td bgcolor="#dfe5d3">
+            Eco-friendly refill packs for both the Detector and Detox sprays. Affordable, sustainable, and easy to use, these refills reduce plastic waste while keeping your food-cleaning routine efficient and cost-effective.
+          </td>
+          <th bgcolor="#ccd3be">AED 5.00</th>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+  <div class="footer">
+    <p>
+      Detect & Detox is developed to support healthy, sustainable living. Product information and usage tips are simplified to improve clarity and ease of understanding. While we strive for accuracy, we cannot guarantee complete correctness of all content. By using our website, you agree to our terms of use, cookie policy, and privacy policy.
+      <br><br>
+      © 2025 Detect & Detox. All rights reserved. Powered by nature. Designed for a cleaner future.
+    </p>
+  </div>
+
+</body>
+</html>

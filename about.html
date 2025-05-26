@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<link rel="icon" type="image" href="data/2.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Poppins', sans-serif;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: black;
+		}
+
+		.navbar {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #b98888;
+			padding: 20px 40px;
+			backdrop-filter: blur(200px);
+			flex-wrap: wrap;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+			color: white;
+			font-size: 20px;
+		}
+
+		.logo h2 {
+			margin-left: 15px;
+			transition: color 0.3s;
+		}
+
+		.logo h2:hover {
+			cursor: pointer;
+			color: wheat;
+		}
+
+		.navbar-list {
+			display: flex;
+			list-style: none;
+			gap: 30px;
+			flex-wrap: wrap;
+			margin-top: 10px;
+		}
+
+		.navbar-item a {
+			position: relative;
+			color: white;
+			text-decoration: none;
+			font-weight: 500;
+		}
+
+		.navbar-item a::before {
+			content: '';
+			position: absolute;
+			bottom: -4px;
+			left: 0;
+			height: 2px;
+			width: 0;
+			background: white;
+			transition: width 0.4s ease-in-out;
+		}
+
+		.navbar-item a:hover::before {
+			width: 100%;
+		}
+
+		main {
+			padding: 60px 20px;
+			max-width: 1000px;
+			margin: auto;
+			font-size: 18px;
+			line-height: 1.6;
+		}
+
+		main h2 {
+			margin-top: 30px;
+			font-size: 24px;
+			color: #333;
+		}
+
+		.footer {
+			background-color: #b98888;
+			color: white;
+			padding: 40px 20px;
+			text-align: center;
+			font-size: 14px;
+			line-height: 1.5;
+			margin-top: 60px;
+		}
+
+		@media (max-width: 768px) {
+			.navbar {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			.navbar-list {
+				flex-direction: column;
+				gap: 10px;
+				padding-left: 0;
+			}
+
+			.logo h2 {
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<nav class="navbar">
+		<div class="logo">
+			<img src="data/2.png" width="64" height="64" alt="Logo">
+			<h2>Nonchalantees</h2>
+		</div>
+		<ul class="navbar-list">
+			<li class="navbar-item"><a href="index.html">Home</a></li>
+			<li class="navbar-item"><a href="about.html">About</a></li>
+			<li class="navbar-item"><a href="product.html">Product</a></li>
+			<li class="navbar-item"><a href="pb.html">Cost</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h2>Our Mission</h2>
+		<p>At Detect & Detox, our mission is rooted in the belief that clean, safe food should be a right not a luxury. We are committed to providing a simple yet powerful way for people to protect their health and reduce their exposure to harmful substances through the foods they eat every day. Our approach is grounded in nature, using only plant-based and eco-friendly ingredients to ensure that you and your family can enjoy produce the way nature intended—fresh, clean, and free from invisible contaminants.</p>
+
+		<h2>Why We Started</h2>
+		<p>Modern fruits and vegetables may look fresh and vibrant, but they’re often coated in synthetic waxes, chemical preservatives, and traces of pesticides that aren’t visible to the naked eye. When we discovered just how persistent and overlooked these residues are, we realized that rinsing with water simply wasn’t enough. That’s when the idea for Detect & Detox was born—a safe, effective, and natural alternative that empowers people to take control of what they consume. We believe in transparency, and that starts by helping you see what’s really on your food.</p>
+
+		<h2>What We Offer</h2>
+		<p>Detect & Detox is a unique two-step cleaning system that helps you take the guesswork out of food safety. First, the DETECT spray uses plant-based ingredients to react with hidden layers of wax, pesticides, and chemicals—revealing them so you can actually see what needs to be cleaned. Then, our DETOX spray steps in, formulated with gentle yet effective natural cleansers to break down and wash away those harmful residues without affecting the taste, texture, or nutrients of your food. The result is produce that’s not only visibly cleaner, but truly safer to eat.</p>
+
+		<h2>Our Values</h2>
+		<p>We are driven by a deep respect for health, the environment, and ethical consumer choices. All of our ingredients are 100% biodegradable and non-toxic, ensuring they are safe not only for humans but also for waterways and wildlife. We believe in full transparency, which is why we show you what’s on your food before removing it. Our solutions are cruelty-free, chemical-free, and designed with minimal environmental impact in mind. With Detect & Detox, clean living becomes effortless and sustainable.</p>
+
+		<h2>Designed for Everyday Life</h2>
+		<p>Whether you’re a busy parent trying to give your kids healthier meals, a mindful eater focused on nutrition, or someone who simply wants peace of mind, Detect & Detox fits seamlessly into your routine. It’s easy to use, affordable, and built for daily life. We’re here to help you reclaim control over your food in the most natural way possible—because what you eat matters, and so does how it’s cleaned.</p>
+	</main>
+
+	<div class="footer">
+		<p>Detect & Detox is developed to support healthy, sustainable living. Product information and usage tips are simplified to improve clarity and ease of understanding. While we strive for accuracy, we cannot guarantee complete correctness of all content. By using our website, you agree to our terms of use, cookie policy, and privacy policy.<br><br>© 2025 Detect & Detox. All rights reserved. Powered by nature. Designed for a cleaner future.</p>
+	</div>
+
+</body>
+</html>
